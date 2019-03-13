@@ -1,0 +1,61 @@
+1. How many word types (unique words) are there in the training corpus?
+There are 15031 unique words in the corpus.
+ 
+2. How many word tokens are there in the training corpus?
+There are 498474 word tokens in the corpus.
+ 
+3. What percentage of word tokens and word types in each of the test corpora dod not occur in the training? 
+ 
+Percentage of Token that did not occur in Training corpora form Brown-Test is 6.579727326615294%
+Percentage of Word Types that did not occur in Training from Brown-Test is 22.770780856423173%
+ 
+Percentage of Token that did not occur in Training corpora form Learner-Test is 5.667074663402693%
+Percentage of Word Types that did not occur in Training from Learner-Test is 16.371367824238128%
+ 
+4. What percentage of Bigrams in each of the test corpora that did not occur in training? 
+Percentage of Token that did not occur in Training corpora Bigram form Brown-Test is 18.22260999626075%
+Percentage of Word Types that did not occur in Training corpora for Bigram in Brown-Test is 34.11251980982568%
+ 
+Percentage of Token that did not occur in Training corpora Bigram form Learner-Test is 28.148631029986966%
+Percentage of Word Types that did not occur in Training corpora for Bigram in Learner-Test is 40.09815950920245%
+ 
+5.
+The log probabilities of unigram ( He was laughed off the screen .) is 8.297109452637387e-19
+The log probabilities of unigram ( There was no compulsion behind them .) is 4.815458073939531e-17
+The log probabilities of unigram ( I look forward to hearing your reply .) is 9.830603457760903e-25
+ 
+The log probabilities of bigram ( He was laughed off the screen .) is 0
+The log probabilities of bigram ( There was no compulsion behind them .) is -88.61054499032139
+The log probabilities of bigram ( I look forward to hearing your reply .) is 0
+ 
+The log probabilities of Add-One Smoothing bigram ( He was laughed off the screen .) is -104.28900433381045
+The log probabilities of Add-One Smoothing bigram ( There was no compulsion behind them .) is -90.77691946400562
+The log probabilities of Add-One Smoothing bigram ( I look forward to hearing your reply .) is -131.20862849277844
+ 
+ 
+6. Compute the perplexities of each of the sentences above under each of the models
+Under Unigram ( He was laughed off the screen .) perplexities is  1.0
+Under Unigram ( There was no compulsion behind them .) perplexities is  1.0
+Under Unigram ( I look forward to hearing your reply .) perplexities is  1.0
+ 
+ 
+Under bigram ( He was laughed off the screen .) perplexities is  1.0
+Under bigram ( There was no compulsion behind them .) perplexities is  6465.961869116331
+Under bigram ( I look forward to hearing your reply .) perplexities is  1.0
+ 
+ 
+Under Add-One Smoothing bigram ( He was laughed off the screen .) perplexities is  30540.35455390311
+Under Add-One Smoothing bigram ( There was no compulsion behind them .) perplexities is  8013.025497344999
+Under Add-One Smoothing bigram ( I look forward to hearing your reply .) perplexities is  86539.94369142248
+ 
+7. Compute the perplexities of the entire test corpora.
+The perplexities of the Entire Test Copra for Brown Test for Unigram is 0.999998891285364
+The perplexities of the Entire Test Copra for Brown Test for Bigram is 0.9999988292127746
+The perplexities of the Entire Test Copra for Brown Test for Add-One Smoothing Bigram is 0.9999988289638236
+ 
+ 
+The perplexities of the Entire Test Copra for Learner Test for Unigram is 0.999987067677278
+The perplexities of the Entire Test Copra for Learner Test for Bigram is 0.9999865384163584
+The perplexities of the Entire Test Copra for Learner Test for Add-One Smoothing Bigram is 0.9999865405877119
+
+We can see that Learner-Test has less more words that does not belong in the Training data. We can also see that the perplexity for the learner data is farther away from 1 compared to Brown-Test which shows that Brown Test is more accurate. 
